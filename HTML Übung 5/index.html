@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Übung 5</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>Buchungsformular</h1>
+            </div>
+
+
+
+        </header>
+        <form method="POST" action="rechnung.html">
+            <section id="persönliches">
+                <h2>Persönliches</h2>
+                <div>
+                    <input type="radio" name="Geschlecht" id="herr" value="herr" checked>
+                    <label for="herr">Herr</label>
+                    <input type="radio" name="Geschlecht" id="frau" value="frau">
+                    <label for="frau">Frau</label>
+                </div>
+
+                <div>
+                    <select name="titel">
+                        <option value="ba">BA</option>
+                        <option value="mag">Mag.</option>
+                        <option value="ma">MA</option>
+                        <option value="dr">Dr.</option>
+                        <option value="drdr">Dr.Dr.</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="text" name="firstname" placeholder="Vorname" required/></br>
+                    <input type="text" name="lastname" placeholder="Nachname" required/><br>
+                    <input type="date" name="age"/>
+                    <label for="age">Geburtsdatum</label><br>
+                    <input type="number" name="telephone" placeholder="Telefon" required/><br>
+                    <input type="email" name="mail" placeholder="E-Mail" required/><br>
+                </div>
+
+            </section>
+
+            <section id="aufenthalt">
+                <h2>Aufenthalt</h2>
+                <div>
+                    <input type="date" name="anreise" required/>
+                    <label for="anreise">Tag der Anreise</label><br>
+                    <input type="date" name="abreise" required/>
+                    <label for="abreise">Tag der Abreise</label><br>
+                </div>
+
+                <div>
+                    <h2>wählen sie ihr Zimmer</h2>
+                        <input type="radio" name="Zimmer" id="sommer" value="sommer" required>
+                        <label for="sommer">Sommerzimmer</label><br>
+                        <input type="radio" name="Zimmer" id="frühling" value="frühling" required>
+                        <label for="frühling">Frühlingszimmer</label><br>
+                        <input type="radio" name="Zimmer" id="herbst" value="herbst" required>
+                        <label for="herbst">Herbstzimmer</label><br>
+                        <input type="radio" name="Zimmer" id="winter" value="winter" required>
+                        <label for="winter">Winterzimmer</label><br>
+                </div>
+
+                <div>
+                    <h2>Buchbare Zusatzoptionen</h2>
+                    <input type="checkbox" name="massage" value="ja" id="massage">
+                    <label for="massage">Massage</label><br>
+                    <input type="checkbox" name="spa" value="ja" id="spa">
+                    <label for="spa">Spa</label><br>
+                    <input type="checkbox" name="swim" value="ja" id="swim">
+                    <label for="swim">Schwimmen</label><br>
+                    <input type="checkbox" name="tennis" value="ja" id="tennis">
+                    <label for="tennis">Tennis</label><br>
+                    <input type="checkbox" name="kino" value="ja" id="kino">
+                    <label for="kino">Kinoabend</label><br>
+                    <input type="checkbox" name="bowl" value="ja" id="bowl">
+                    <label for="bowl">Bowling</label><br>
+                </div>
+            </section>
+
+            <section id="bezahlung">
+                <div>
+                    <h2>Zahlungsoptionen</h2>
+                    <select name="bezahlung"></li><br>
+                    <option value="sofort">Sofort Überweisung</option>
+                    <option value="kredit">Kreditkarte</option>
+                    <option value="rechnung">Rechnung</option>
+                    <option value="vokasse">Vorkasse</option>
+                    <input type="text" name="cardnumber" placeholder="Kreditkartennummer" required>
+                    <input type="file" id="zahlungsbestätigung">
+                </div>
+                    <button type="reset">Daten zurücksetzen</button>
+                    <button type="submit">Daten absenden</button>        
+            </section>
+        </form>
+
+
+    </body>
+
+
+
+</html>
