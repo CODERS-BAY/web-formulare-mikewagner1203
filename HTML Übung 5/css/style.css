@@ -39,6 +39,9 @@ button, input, select {
     border-radius: 5px;
     box-shadow: 1px, 1px, 5px #777;
     height: 25px;
-    margin: 10px, 10px;
 }
 
+.date, .center, .input, .titel, .radio  {
+    display: table;
+    margin: 0 auto;
+}
