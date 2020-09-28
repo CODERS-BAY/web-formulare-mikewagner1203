@@ -6,9 +6,39 @@
 body, html {
     margin:0;
     padding:0;
+    color: #fff;
 }
 
-h1 {
-    text-align: center;
-    text-decoration: solid, underline;    
+body {
+    background-image: url(../images/beach.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative; 
 }
+
+header {
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h1, h2 {
+    text-align: center;
+    text-decoration: underline;   
+    height: 30px;
+    margin: 20px;
+}
+
+button, input, select {
+    background-color: rgb(143, 212, 229);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px, 1px, 5px #777;
+    height: 25px;
+    margin: 10px, 10px;
+}
+
